@@ -1,0 +1,27 @@
+/*=== Menu Show ===*/
+const showMenu = (toggleId, navId) =>{
+    const toggle = document.getElementById(toggleId),
+    nav = document.getElementById(navId)
+
+    if(toggle && nav){
+        toggle.addEventListener('click', ()=>{
+            nav.classList.toggle('show')
+        })
+    }
+}
+showMenu('nav-toggle','nav-menu')
+/*=== Remove Menu Mobile ===*/
+
+/*=== Scroll Sections Active Link ===*/
+
+/*=== Scroll Reveal Animation ===*/
+
+/*=== Scroll Home ===*/
+
+/*=== Scroll About ===*/
+
+/*=== Scroll Skills ===*/
+
+/*=== Scroll Portfolio===*/
+
+/*=== ===*/
