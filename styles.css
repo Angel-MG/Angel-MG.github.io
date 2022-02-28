@@ -9,14 +9,14 @@
 
 /*=== Colores ===*/
 :root{
-    --nav-color: #c7c2c2;
-    --first-color: #0b2452;
-    --white-color: #545454;
-    --dark-color: #c7c2c2;
-    --text-color: #c7c2c2;
-    --slide-bar: rgba(87, 85, 85, 0.3);
-    --footer-background: #413d3d;
-    --footer-text: #697477ad;
+    --first-color: #0F62FE;
+    --nav-color: #fafaff;
+    --white-color: #fafaff;
+    --dark-color: #2A3B47;
+    --text-color: #697477;
+    --slide-bar: rgba(255,255,255,.3);
+    --footer-background: #2A3B47;
+    --footer-text: #697477;
 }
 
 /*=== Fuente y tipografia ===*/
@@ -48,15 +48,15 @@
     --z-fixed: 100;
 }
 /*=== Variables Dark Theme ===*/
-body.dark-theme{
-    --first-color: #0F62FE;
-    --nav-color: #fafaff;
-    --white-color: #fafaff;
-    --dark-color: #2A3B47;
-    --text-color: #697477;
-    --slide-bar: rgba(255,255,255,.3);
-    --footer-background: #2A3B47;
-    --footer-text: #697477;
+body.dark-theme{    
+    --nav-color: #c7c2c2;
+    --first-color: #0b2452;
+    --white-color: #545454;
+    --dark-color: #c7c2c2;
+    --text-color: #c7c2c2;
+    --slide-bar: rgba(87, 85, 85, 0.3);
+    --footer-background: #413d3d;
+    --footer-text: #697477ad;
 }
 /*=== Button Dark/light ===*/
 .change-theme{
