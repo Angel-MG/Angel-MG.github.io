@@ -56,7 +56,7 @@ body.dark-theme{
     --text-color: #c7c2c2;
     --slide-bar: rgba(87, 85, 85, 0.3);
     --footer-background: #413d3d;
-    --footer-text: #697477ad;
+    --footer-text: #697477ad; 
 }
 /*=== Button Dark/light ===*/
 .change-theme{
