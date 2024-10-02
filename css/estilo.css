@@ -1,0 +1,30 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+div p {
+  color: red;
+}
+.btn {
+  font-size: 30px;
+  border: 0px;
+}
+.btn.btn-red {
+  background: red;
+}
+div.contenedor {
+  border: dotted 1px purple;
+}
+label,
+a,
+.s1 {
+  font-family: Arial;
+  color: chartreuse;
+}
+section > span {
+  font-weight: bolder;
+}
+section + div {
+  font-weight: bolder;
+  color: black;
+}
