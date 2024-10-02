@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Media Queries</title>
+    <style>
+      body {
+        font-family: Arial;
+        line-height: 1.6;
+        padding: 20px;
+        max-width: 800px;
+        margin: 0 auto;
+      }
+      h1 {
+        text-align: center;
+        animation: float 3s ease-in-out infinite;
+      }
+      @keyframes float {
+        0% {
+          transform: translateY(0); /* Posición inicial */
+        }
+        50% {
+          transform: translateY(-20px); /* Mueve hacia arriba */
+        }
+        100% {
+          transform: translateY(0); /* Vuelve a la posición inicial */
+        }
+      }
+      h2 {
+        color: #333;
+      }
+      .example {
+        border: 1px solid #ddd;
+        padding: 10px;
+        margin-bottom: 20px;
+      }
+      /* Ejemplo 1: Cambio de color de fondo */
+      @media screen and (max-width: 600px) {
+        body {
+          background-color: #c8caca;
+        }
+      }
+      /* Ejemplo 2: Cambio de tamaño de fuente y estilo */
+      @media screen and (min-width: 601px) and (max-width: 900px) {
+        body {
+          font-size: 18px;
+        }
+      }
+      /* Ejemplo 3: Cambio de layout */
+      .flex-container {
+        display: flex;
+        justify-content: space-between;
+      }
+      .flex-item {
+        width: 30%;
+        background-color: #ddd;
+        padding: 10px;
+        margin-bottom: 10px;
+      }
+      @media screen and (max-width: 600px) {
+        .flex-container {
+          flex-direction: column;
+        }
+        .flex-item {
+          width: 100%;
+        }
+      }
+      /* Ejemplo 4: Ocultar/Mostrar elementos */
+      .hide-on-mobile {
+        display: block;
+      }
+      @media screen and (max-width: 600px) {
+        .hide-on-mobile {
+          display: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Media Queries</h1>
+
+    <h2>¿Qué son los Media Queries?</h2>
+    <p>
+      Los Media Queries son una característica de CSS3 que permite aplicar
+      estilos específicos basados en las características del dispositivo, como
+      el ancho de la pantalla, la orientación o la resolución.
+    </p>
+
+    <h2>¿Cómo se usan?</h2>
+    <p>
+      Los Media Queries se utilizan dentro de las hojas de estilo CSS o en la
+      sección &lt;style&gt; de un documento HTML. La sintaxis básica es:
+    </p>
+    <pre>
+@media tipo-de-medio and (característica: valor) {
+    /* Estilos CSS */
+}</pre
+    >
+
+    <h2>¿Dónde se usan?</h2>
+    <p>Los Media Queries se usan principalmente en:</p>
+    <ul>
+      <li>
+        Diseño responsive para adaptar sitios web a diferentes tamaños de
+        pantalla
+      </li>
+      <li>
+        Optimización de presentación para diferentes dispositivos (móviles,
+        tablets, laptops)
+      </li>
+      <li>
+        Ajuste de estilos basados en las capacidades del dispositivo como
+        orientación o resolución
+      </li>
+      <li>Creación de versiones para impresión de páginas web</li>
+    </ul>
+
+    <h2>Ejemplos de uso</h2>
+
+    <div class="example">
+      <h3>Ejemplo 1: Cambio de color de fondo</h3>
+      <p>
+        El color de fondo cambia a gris claro cuando la pantalla es menor a
+        600px de ancho
+      </p>
+    </div>
+
+    <div class="example">
+      <h3>Ejemplo 2: Cambio de tamaño de fuente</h3>
+      <p>
+        El tamaño de fuente aumenta a 18px cuando la pantalla tiene entre 601px
+        y 900px de ancho
+      </p>
+    </div>
+
+    <div class="example">
+      <h3>Ejemplo 3: Cambio de layout</h3>
+      <p>
+        El layout cambia de horizontal a vertical en pantallas menores a 600px
+      </p>
+      <div class="flex-container">
+        <div class="flex-item">Elemento 1</div>
+        <div class="flex-item">Elemento 2</div>
+        <div class="flex-item">Elemento 3</div>
+      </div>
+    </div>
+
+    <div class="example">
+      <h3>Ejemplo 4: Ocultar/Mostrar elementos</h3>
+      <p>Este párrafo se oculta en pantallas menores a 600px de ancho:</p>
+      <p class="hide-on-mobile">
+        Este contenido se oculta en dispositivos móviles
+      </p>
+    </div>
+  </body>
+</html>
