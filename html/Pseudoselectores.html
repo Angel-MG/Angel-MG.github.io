@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejemplos de Pseudoselectores en CSS</title>
+    <style>
+      /* Pseudo-clase :hover */
+      a:hover {
+        color: red;
+        text-decoration: underline;
+      }
+
+      button:hover {
+        background-color: yellow;
+      }
+
+      /* Pseudo-clase :nth-child() */
+      li:nth-child(2) {
+        color: blue;
+      }
+
+      li:nth-child(odd) {
+        background-color: lightgray;
+      }
+
+      /* Pseudo-elemento ::before */
+      .before-parrafo::before {
+        content: "[Inicio del párrafo] ";
+        background-color: lightblue;
+        padding: 5px;
+        font-weight: bold;
+        color: black;
+        border: 1px solid blue;
+      }
+
+      .before-titulo::before {
+        content: "before ";
+        background-color: yellow;
+        padding: 5px;
+        color: red;
+        font-weight: bold;
+      }
+
+      /* Pseudo-elemento ::after */
+      .after-parrafo::after {
+        content: " [Fin del párrafo]";
+        background-color: lightgreen;
+        padding: 5px;
+        font-weight: bold;
+        color: black;
+        border: 1px solid green;
+      }
+
+      .after-subtitulo::after {
+        content: " (Subtítulo)";
+        background-color: lightcoral;
+        padding: 5px;
+        color: white;
+        font-weight: bold;
+      }
+
+      /* Pseudo-clase :focus */
+      input:focus {
+        border-color: green;
+      }
+
+      textarea:focus {
+        border-color: orange;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Pseudoselectores</h1>
+
+    <!-- Ejemplo de :hover -->
+    <h2>Pseudo-clase :hover</h2>
+    <p>Pasa el cursor sobre el enlace o el botón:</p>
+    <a href="#">Enlace de ejemplo</a><br />
+    <button>Botón de ejemplo</button>
+
+    <!-- Ejemplo de :nth-child() -->
+    <h2>Pseudo-clase :nth-child()</h2>
+    <p>
+      El segundo elemento de la lista cambiará de color, y los elementos impares
+      tendrán fondo gris:
+    </p>
+    <ul>
+      <li>Elemento 1</li>
+      <li>Elemento 2</li>
+      <li>Elemento 3</li>
+      <li>Elemento 4</li>
+    </ul>
+
+    <!-- Ejemplo de ::before -->
+    <h2>Pseudo-clase :before</h2>
+    <h3 class="before-titulo">Este título tiene contenido antes.</h3>
+    <p class="before-parrafo">Este párrafo tiene contenido insertado antes.</p>
+
+    <!-- Ejemplo de ::after -->
+    <h2>pseudo-clase :after</h2>
+    <h3 class="after-subtitulo">Este título tiene contenido después.</h3>
+    <p class="after-parrafo">Este párrafo tiene contenido insertado después.</p>
+
+    <!-- Ejemplo de :focus -->
+    <h2>Pseudo-clase :focus</h2>
+    <p>Clic en el campo de texto para cambiar el borde de color</p>
+    <input type="text" placeholder="Clic aquí" /><br /><br />
+    <textarea placeholder="Clic aquí"></textarea>
+  </body>
+</html>

@@ -1,0 +1,71 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style type="text/css">
+      * {
+        margin: 0px;
+        padding: 0px;
+        font-size: 12px;
+      }
+      input {
+        border: 0px;
+        background: lightgray;
+        color: white;
+        font-size: 14px;
+        font-family: Arial;
+        width: 200px;
+        height: 50px;
+        cursor: pointer;
+      }
+      input:hover {
+        background: darkgray;
+        color: black;
+      }
+      .miClase {
+        border: 1px yellow dotted;
+        display: inline-block;
+      }
+      #contenedor2 {
+        font-size: 25px;
+        display: block;
+      }
+      .btn {
+        border: 0px;
+        width: 150px;
+        height: 50px;
+        cursor: pointer;
+        background: yellowgreen;
+        color: white;
+      }
+      .btn-info {
+        border: 1px solid brown;
+        background: darkblue;
+        color: white;
+      }
+      .btn-info:hover {
+        background: red;
+        cursor: pointer;
+        border-radius: 1000px;
+        color: black;
+      }
+      .btn-sm {
+        width: 100px;
+      }
+      .btn-md {
+        width: 200px;
+      }
+      .btn-xl {
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <input type="button" value="Mi boton" />
+    <input type="text" />
+    <div class="miClase">Contenedor 1</div>
+    <div class="miClase" id="contenedor2">Contenedor 2</div>
+    <button class="btn btn-info btn-xl">Mi boton</button>
+  </body>
+</html>

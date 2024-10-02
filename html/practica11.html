@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title></title>
+    <style type="text/css">
+      * {
+        margin: 0px;
+        padding: 0px;
+      }
+      #header {
+        margin: auto;
+        width: 500px;
+        border: 1px solid #000;
+      }
+      ul {
+        list-style: none;
+      }
+      .nav li a {
+        background: #000;
+        color: #fff;
+        text-decoration: none;
+        padding: 10px;
+        display: block;
+      }
+      .nav > li {
+        float: left;
+      }
+      .nav > li a:hover {
+        background: #68dafc;
+      }
+      .nav li ul {
+        position: relative;
+        display: none;
+        min-width: 25px;
+      }
+      .nav li:hover > ul {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="header">
+      <ul class="nav">
+        <li><a href="">Inicio</a></li>
+        <li><a href="">Comentarios</a></li>
+        <li>
+          <a href="">Chat</a>
+          <ul>
+            <li><a href="">Chat 1</a></li>
+            <li><a href="">Chat 2</a></li>
+            <li><a href="">Chat 3</a></li>
+            <li><a href="">Chat 4</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>

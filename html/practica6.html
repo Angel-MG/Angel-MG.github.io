@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Practica6</title>
+  </head>
+  <body>
+    <label
+      style="
+        border: 5px #b6ffab dashed;
+        font-size: 35px;
+        background: #00840e;
+        color: #fff;
+      "
+      >Clase de Programación Web</label
+    >
+    <form
+      action="https://google.com"
+      method="post"
+      style="font-size: 25px; margin: 10px"
+    >
+      <input type="hidden" name="oculto" value="01650221" />
+      <table border="1">
+        <caption>
+          Datos Personales
+        </caption>
+        <tr>
+          <td>Nombre</td>
+          <td>
+            <input
+              type="text"
+              name="Nombre"
+              required
+              title="Debes ingresar un nombre"
+              pattern="[A-Z]"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td>Apellido Paterno</td>
+          <td><input type="text" id="ap_paterno" required /></td>
+        </tr>
+        <tr>
+          <td>Apellido Materno</td>
+          <td><input type="text" id="ap_materno" required /></td>
+        </tr>
+        <tr>
+          <td>Sexo</td>
+          <td>
+            <label for=""
+              >F <input type="radio" name="sexo" value="Femenino"
+            /></label>
+            <label for=""
+              >M <input type="radio" name="sexo" value="Masculino"
+            /></label>
+          </td>
+        </tr>
+        <tr>
+          <td>Edad</td>
+          <td><input type="range" min="10" max="70" /></td>
+        </tr>
+        <tr>
+          <td>Fecha de Nacimiento</td>
+          <td><input type="date" /></td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <input
+              type="submit"
+              name="btn_enviar"
+              value="Enviar_Datos"
+              style="
+                border: 0px solid;
+                background: #8cc1f1;
+                color: #fff;
+                width: 100px;
+                height: 50px;
+                cursor: pointer;
+                border-radius: 2px 5px;
+              "
+            />
+            <input type="reset" name="limpiar" value="Limpiar_Datos" />
+          </td>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>
